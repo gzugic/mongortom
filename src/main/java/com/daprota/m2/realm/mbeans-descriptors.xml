@@ -1,0 +1,17 @@
+ <mbeans-descriptors>
+     <mbean name="MongoDBRealm" description="Implementation of Realm that works with MongoDB database" domain="Catalina" group="Realm" type="com.daprota.m2.realm.MongoDBRealm">
+        <attribute name="allRolesMode" description="The all roles mode." type="java.lang.String" />         
+        <attribute name="connectionName" description="The connection username to use when trying to connect to the database" type="java.lang.String" /> 
+        <attribute name="connectionPassword" description="The connection password to use when trying to connect to the database" type="java.lang.String" /> 
+        <attribute name="connectionURL" description="The connection URL to use when trying to connect to the database" type="java.lang.String" /> 
+        <attribute name="digest" description="Digest algorithm used in storing passwords in a non-plaintext format" type="java.lang.String" /> 
+        <attribute name="digestEncoding" description="The digest encoding charset." type="java.lang.String" />         
+        <attribute name="realmPath" description="The realm path" type="java.lang.String" /> 
+        <attribute name="stateName" description="The name of the LifecycleState that this component is currently in" type="java.lang.String" writeable="false" />         
+        <attribute name="validate" description="The 'validate certificate chains' flag." type="boolean" /> 
+        <operation name="start" description="Start" impact="ACTION" returnType="void" /> 
+        <operation name="stop" description="Stop" impact="ACTION" returnType="void" /> 
+        <operation name="init" description="Init" impact="ACTION" returnType="void" /> 
+        <operation name="destroy" description="Destroy" impact="ACTION" returnType="void" /> 
+     </mbean>
+  </mbeans-descriptors>
